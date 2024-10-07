@@ -1,0 +1,3 @@
+s2 web 스와이퍼 참고!!
+
+https://swiperjs.com/swiper-api#param-scale

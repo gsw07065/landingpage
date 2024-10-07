@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landingpage</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <header>
     <ul class="nav">
-      <li><p>PROFILE</p></li>
-      <li><p>WEB</p><span>[웹 디자인/퍼블리싱]</span></li>
+      <li><a href="#s1">PROFILE</a></li>
+      <li><a href="#s2">WEB</a><span>[웹 디자인/퍼블리싱]</span></li>
       <li>
         <a href="#"><img src="images/s0_top_logo.png" alt="top_logo"></a>
       </li>
-      <li><p>LOGO</p><span>[로고 디자인]</span></li>
-      <li><p>CHARACTER</p><span>[캐릭터 디자인]</span></li>
+      <li><a href="#s3">LOGO</a><span>[로고 디자인]</span></li>
+      <li><a href="#s4">CHARACTER</a><span>[캐릭터 디자인]</span></li>
     </ul>
   </header>
 
   <div id="wrap">
-    <div class="s0">
+    <div class="s0" id="s0">
       <div class="leftWord">
         <p><img src="images/s0_juwon.png" alt="s0_juwon"></p>
         <p>WEB PUBLISHING</p>
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <div class="s1">
+    <div class="s1" id="s1">
       <div class="left">
         <p><img src="" alt=""></p>
         <div class="text">
@@ -127,7 +128,7 @@
       </div>
     </div>
 
-    <div class="s2">
+    <div class="s2" id="s2">
       <ul class="web">
         <li>
           <div class="left">
@@ -334,16 +335,64 @@
       </ul>
     </div>
 
-    <div class="s3">
+    <div class="s3" id="s3">
       <div class="box logoBox">
         <p><img src="images/s3_logo.png" alt="s3_logo"></p>
+      </div>
+      <div class="swiper mySwiper1">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <p><img src="images/s0_portfolio_mainicon.png" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+          <li class="swiper-slide">
+            <p><img src="" alt=""></p>
+            <p>logo name</p>
+          </li>
+        </ul>
+        <div id="btn">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
       <div class="box designBox">
         <p><img src="images/s3&s4_design.png" alt="s3_design"></p>
       </div>
     </div>
 
-    <div class="s4">
+    <div class="s4" id="s4">
       <div class="box chaBox">
         <p><img src="images/s4_character.png" alt="s4_character"></p>
       </div>
@@ -352,7 +401,8 @@
       </div>
     </div>
 
-    <div class="s5">
+    <div class="s5" id="s5">
+      <p class="bg"></p>
       <p><img src="images/s0_portfolio_mainicon.png" alt="s5_icon"></p>
       <div class="text">
         <div class="pBox">
@@ -367,7 +417,7 @@
       </div>
     </div>
     
-    <div class="s6">
+    <div class="s6" id="s6">
       <div class="con">
         <div class="logo">
           <p><img src="images/s6_logo.png" alt="s6_logo"></p>
@@ -382,5 +432,28 @@
       </a>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      loop:true,
+      slidesPerView: 4,
+      spaceBetween: 0,
+      centeredSlides: true,
+      effect:"coverflow",
+      coverflowEffect: {
+        slideShadows: false,
+        scale: .9,
+        rotate: -17,
+        stretch: 10,
+        depth: 200,
+        modifier:.6,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
