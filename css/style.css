@@ -100,7 +100,7 @@ header .nav li a img{
 }
 .s0 .mainWord p:nth-child(2){
   position: absolute;
-  right: 625px; top: -50px;
+  left: 950px; top: -50px;
 }
 
 
@@ -196,13 +196,15 @@ header .nav li a img{
 /* s2 시작 */
 .s2{
   width: 80%;
-  margin: 100px auto;
+  margin: 0 auto;
 }
 .s2 .web>li{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
+  position: relative;
+  margin: 150px 0; 
 }
 .s2 .web>li .left{
   width: 800px;
@@ -212,12 +214,17 @@ header .nav li a img{
   width: 100%; background-color: #999;
   height: 450px;
 }
+.s2 .web>li .left p.mobile{
+  position: absolute;
+  right: -50px; bottom: -50px;
+  width: 240px; height: 479.1px;
+  border-radius: 30px;
+  background-color: #fff;
+}
 .s2 .web>li .left p.num{
   position: absolute;
   left: -50px; top: -50px;
 }
-
-
 .s2 .web>li .right{
   width: 600px;
   display: flex; flex-direction: column;
@@ -242,6 +249,15 @@ header .nav li a img{
   font-family: InterSB;
   color: #FF4040;
   text-align: center;
+  width: 55px;
+}
+.s2 .web>li .right .middleEx li .color{
+  display: flex; gap: 10px;
+}
+.s2 .web>li .right .middleEx li .color p{
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 .s2 .web>li .right .btn{
   display: flex;
@@ -249,24 +265,87 @@ header .nav li a img{
   justify-content: center;
 }
 .s2 .web>li .right .btn li{
+  
+}
+.s2 .web>li .right .btn li a{
+  display: block;
   padding: 10px 0;
   width: 140px;
   text-align: center;
   border-radius: 2px;
   font-family: InterR;
-}
-.s2 .web>li .right .btn li:nth-child(1){
-  background-color: #FF4040;
-}
-.s2 .web>li .right .btn li:nth-child(1) a{
-  color: #000;
-}
-.s2 .web>li .right .btn li:nth-child(2){
   border: 1px solid #FF4040;
-}
-.s2 .web>li .right .btn li:nth-child(2) a{
   color: #FF4040;
+  transition: .5s;
 }
-.s2 .brandname{
+.s2 .web>li .right .btn li a:hover{
+ background-color: #FF4040;
+ color: #000;
+}
+.s2 .web>li p.brandname{
   position: absolute;
+  left: -70px; bottom: -30px;
+}
+.s2 .web>li:nth-child(2) p.brandname{
+  left: -120px; bottom: -50px;
+}
+.s2 .web>li:nth-child(4) p.brandname{
+  bottom: -40px;
+}
+
+/* s3 시작 */
+.s3{
+  width: 100%; height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.s3 .box{position: absolute;}
+.s3 .logoBox{
+  left: 0; top: 50px;
+  z-index: 10;
+}
+.s3 .designBox{
+  right: 0; bottom: 30px;
+}
+
+/* s4 시작 */
+.s4{
+  width: 100%; height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+.s4 .box{position: absolute;}
+.s4 .chaBox{
+  left: 0; top: 50px;
+  z-index: 10;
+}
+.s4 .designBox{
+  right: 0; bottom: 30px;
+}
+
+/* s5 시작 */
+.s5{
+  width: 100%; height: 100vh;
+  margin: 0 auto;
+}
+
+/* s6 시작 */
+.s6{
+  width: 100%; height: 100vh;
+  margin: 0 auto;
+}
+.s6 a#topBtn{
+  display: block;
+  padding: 10px 0;
+  width: 140px;
+  text-align: center;
+  border-radius: 2px;
+  font-family: InterR;
+  border: 1px solid #FF4040;
+  color: #FF4040;
+  transition: .5s;
+}
+.s2 a#topBtn:hover{
+ background-color: #FF4040;
+ color: #000;
 }
