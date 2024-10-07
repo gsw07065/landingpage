@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: InterBlack;
+  src: url(../webfonts/Inter_24pt-Black.woff) format("woff");
+}
+@font-face {
+  font-family: InterB;
+  src: url(../webfonts/Inter_24pt-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: InterSB;
+  src: url(../webfonts/Inter_24pt-SemiBold.woff) format("woff");
+}
+@font-face {
+  font-family: InterM;
+  src: url(../webfonts/Inter_24pt-Medium.woff) format("woff");
+}
+@font-face {
+  font-family: InterR;
+  src: url(../webfonts/Inter_24pt-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: NotoB;
+  src: url(../webfonts/NotoSansKR-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: NotoR;
+  src: url(../webfonts/NotoSansKR-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: NotoL;
+  src: url(../webfonts/NotoSansKR-Light.woff) format("woff");
+}
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #fff;}
+body{background-color: #000;}
+#wrap{
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+/* header 시작 */
+header{
+  margin: 0 auto;
+  width: 100%; height: 100px;
+  text-align: center;
+  display: flex; justify-content: center;
+  position: fixed; z-index: 999;
+}
+header .nav{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  color: #FF4040;
+}
+header .nav li{
+  position: relative;
+}
+header .nav li p{
+  font-family: InterBlack;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+header .nav li span{
+  font-family: NotoR;
+  font-size: 12.5px;
+  position: absolute;
+  left: 50%; top: 25px;
+  transform: translateX(-50%);
+  display: block;
+  width: 120px; text-align: center;
+}
+header .nav li a img{
+  width: 85%;
+}
+
+/* s0 시작 */
+.s0{
+  height: 100vh; width: 90%;
+  margin: 0 auto;
+  display: flex; flex-direction: column;
+  justify-content: end;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.s0 .leftWord{
+  display: flex; flex-direction: column;
+  gap: 40px;
+  font-family: InterSB;
+  font-size: 18px;
+  color: #FF4040;
+}
+.s0 .mainWord{
+  position: relative;
+}
+.s0 .mainWord p:nth-child(2){
+  position: absolute;
+  right: 625px; top: -50px;
+}
+
+
+/* s1 시작 */
+.s1{
+  width: 80%; height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; align-items: center;
+  gap: 100px;
+}
+.s1 .left{
+  width: 30%;
+  display: flex; flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.s1 .left>p{
+  width: 70%; aspect-ratio: 1 / 1.2;
+  background-color: #555;
+  border-radius: 500px 500px 0 0;
+}
+.s1 .left .text{
+  display: flex; flex-direction: column;
+  gap: 13px;
+  color: #fff;
+  font-family: InterR;
+  font-size: 15px;
+}
+.s1 .left .text .name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.s1 .left .text .name h4{
+  font-weight: normal;
+  font-family: NotoL;
+  font-size: 23px;
+  letter-spacing: 10px;
+}
+
+.s1 .right{
+  flex: 1;
+  color: #fff;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.s1 .right h5{
+  color: #FF4040;
+  line-height: 50px;
+  margin-bottom: 10px;
+  font-family: InterB;
+  font-size: 17px;
+}
+.s1 .right .whiteword{
+  font-family: NotoL;
+  font-size: 14px;
+  line-height: 30px;
+}
+.s1 .right .rTop{
+  display: flex;
+  gap: 150px;
+}
+.s1 .right .rTop .whiteword{
+  margin-bottom: 15px;
+}
+.s1 .right .rTop .rTopR ul{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.s1 .right .rBottom ul.skill{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.s1 .right .rBottom ul.skill li{
+  display: flex; flex-direction: column;
+  align-items: center;
+  width: 155px;
+  margin: 15px 0;
+  gap: 10px;
+}
+.s1 .right .rBottom ul.skill li p:nth-child(1){
+  width: 50px; height: 50px;
+  background-color: #ccc;
+}
+
+/* s2 시작 */
+.s2{
+  width: 80%;
+  margin: 100px auto;
+}
+.s2 .web>li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.s2 .web>li .left{
+  width: 800px;
+  position: relative;
+}
+.s2 .web>li .left p:nth-child(1){
+  width: 100%; background-color: #999;
+  height: 450px;
+}
+.s2 .web>li .left p.num{
+  position: absolute;
+  left: -50px; top: -50px;
+}
+
+
+.s2 .web>li .right{
+  width: 600px;
+  display: flex; flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-family: NotoL;
+  font-size: 15px;
+  
+}
+.s2 .web>li .right .topEx{
+  line-height: 30px;
+}
+.s2 .web>li .right .middleEx li{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  line-height: 18px;
+  margin: 20px 0;
+}
+.s2 .web>li .right .middleEx li h4{
+  font-weight: normal;
+  font-family: InterSB;
+  color: #FF4040;
+  text-align: center;
+}
+.s2 .web>li .right .btn{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.s2 .web>li .right .btn li{
+  padding: 10px 0;
+  width: 140px;
+  text-align: center;
+  border-radius: 2px;
+  font-family: InterR;
+}
+.s2 .web>li .right .btn li:nth-child(1){
+  background-color: #FF4040;
+}
+.s2 .web>li .right .btn li:nth-child(1) a{
+  color: #000;
+}
+.s2 .web>li .right .btn li:nth-child(2){
+  border: 1px solid #FF4040;
+}
+.s2 .web>li .right .btn li:nth-child(2) a{
+  color: #FF4040;
+}
+.s2 .brandname{
+  position: absolute;
+}
