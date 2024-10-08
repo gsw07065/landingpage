@@ -36,10 +36,15 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{text-decoration: none; color: #fff;}
-html{scroll-behavior: smooth;}
-body{background-color: #000;scroll-behavior: smooth;}
-#wrap{
+
+ html{scroll-behavior: smooth;}
+/*기기에 따라 오류 발생 */
+
+body{
+  background-color: #000;
   overflow-x: hidden;
+}
+#wrap{
   width: 100%;
 }
 
@@ -65,13 +70,29 @@ header .nav li a{
   font-size: 18px;
   letter-spacing: 1px;
   color: #FF4040;
+  transition: .5s;
+}
+header .nav li a::after{
+  display: block;
+  content: '';
+  border-bottom: 3px solid #FF4040;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+header .nav li:nth-child(3) a:after{
+  content: none;
+}
+header .nav li a:hover:after{
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
 }
 header .nav li span{
   color: #FF4040;
   font-family: NotoR;
   font-size: 12.5px;
   position: absolute;
-  left: 50%; top: 25px;
+  left: 50%; top: 30px;
   transform: translateX(-50%);
   display: block;
   width: 120px; text-align: center;
@@ -273,7 +294,7 @@ header .nav li a img{
   padding: 10px 0;
   width: 140px;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 50%;
   font-family: InterR;
   border: 1px solid #FF4040;
   color: #FF4040;
@@ -347,7 +368,26 @@ header .nav li a img{
   left: 50%; bottom: 50px;
   transform: translateX(-50%);
   z-index: 99;
-  width: 100px; height: 50px;
+  width: 300px; height: 100px;
+}
+.mySwiper1 #btn .swiper-button-next,
+.mySwiper1 #btn .swiper-button-prev{
+  width: 130px; height: 50px;
+  border: 1px solid #FF4040;
+  border-radius: 50%;
+  transition: .5s;
+}
+.mySwiper1 #btn .swiper-button-next:hover,
+.mySwiper1 #btn .swiper-button-prev:hover{
+  background-color: #FF4040;
+}
+.mySwiper1 #btn .swiper-button-next:after,
+.mySwiper1 #btn .swiper-button-prev:after{
+content: none;
+}
+.mySwiper1 #btn .swiper-button-next:hover img,
+.mySwiper1 #btn .swiper-button-prev:hover img{
+  color: #000;
 }
 
 /* s4 시작 */
@@ -418,7 +458,7 @@ header .nav li a img{
   padding: 10px 0;
   width: 140px;
   text-align: center;
-  border-radius: 2px;
+  border-radius: 50%;
   font-family: InterR;
   border: 1px solid #FF4040;
   color: #FF4040;

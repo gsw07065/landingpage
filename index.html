@@ -6,6 +6,8 @@
   <title>landingpage</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
   <header>
@@ -383,8 +385,12 @@
           </li>
         </ul>
         <div id="btn">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <img src="images/s3&s4_arrow_right_Color.png" alt="arrow">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="images/s3&s4_arrow_left_Color.png" alt="arrow">
+          </div>
         </div>
       </div>
       <div class="box designBox">
@@ -434,26 +440,9 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/landingpage.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper1", {
-      loop:true,
-      slidesPerView: 4,
-      spaceBetween: 0,
-      centeredSlides: true,
-      effect:"coverflow",
-      coverflowEffect: {
-        slideShadows: false,
-        scale: .9,
-        rotate: -17,
-        stretch: 10,
-        depth: 200,
-        modifier:.6,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+    
   </script>
 </body>
 </html>
