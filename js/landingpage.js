@@ -1,12 +1,20 @@
 //s2 web swiper 오류
 var swiper = new Swiper(".mySwiper", {
   //direction: "vertical",
+  //적용시 오류
+  speed: 1000,
   enabled: true,
   slidesPerView: 1,
   spaceBetween: 30,
   mousewheel: true,
-  forceToAxis: true,
-  releaseOnEdges: true,
+  //forceToAxis: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 //s3 logo swiper
@@ -93,13 +101,13 @@ $(window).scroll(function(){
 
   $("header .nav li a").removeClass("on");
 
-  if($(this).scrollTop() >= s1Top && $(this).scrollTop() < s1Bot){
+  if($(this).scrollTop() >= s1Top-100 && $(this).scrollTop() < s1Bot-100){
     $("header .nav li:nth-child(1) a").addClass("on");
-  }else if($(this).scrollTop() >= s2Top && $(this).scrollTop() < s2Bot){
+  }else if($(this).scrollTop() >= s2Top-100 && $(this).scrollTop() < s2Bot-100){
     $("header .nav li:nth-child(2) a").addClass("on");
-  }else if($(this).scrollTop() >= s3Top && $(this).scrollTop() < s3Bot){
+  }else if($(this).scrollTop() >= s3Top-100 && $(this).scrollTop() < s3Bot-100){
     $("header .nav li:nth-child(4) a").addClass("on");
-  }else if($(this).scrollTop() >= s4Top && $(this).scrollTop() < s4Bot){
+  }else if($(this).scrollTop() >= s4Top-100 && $(this).scrollTop() < s4Bot-50){
     $("header .nav li:nth-child(5) a").addClass("on");
   }else{
     $("header .nav li a").removeClass("on");
@@ -110,7 +118,7 @@ $(window).scroll(function(){
 
 
 
-  if($(this).scrollTop() >= s5Top && $(this).scrollTop() < s5Bot){
+  if($(this).scrollTop() >= s5Top-50 && $(this).scrollTop() < s5Bot-50){
     $("header .nav li a").css({color:"#000"});
     $("header .nav li span").css({color:"#000"});
     $("header .nav li:nth-child(3) a img").attr("src","images/top_logo_black.png");
