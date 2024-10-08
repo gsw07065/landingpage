@@ -231,11 +231,23 @@ header .nav li a img{
 
 /* s2 시작 */
 .s2{
-  width: 80%; height: 100%;
+  width: 100%; height: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 100px;
 }
-.s2 .web>li{
+#s2 .mySwiper {
+  width: 100%;
+  height: 100%;
+  /* position: relative !important; */
+  background-color: #444;
+  
+}
+#s2 .mySwiper .swiper-wrapper{
+  align-items: center;
+}
+
+#s2 .mySwiper li.swiper-slide {
+  width: 80%; height: 100% !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,6 +255,13 @@ header .nav li a img{
   position: relative;
   padding: 150px 0;
 }
+/* .mySwiper li.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
 .s2 .web>li .left{
   width: 800px;
   position: relative;
@@ -251,12 +270,26 @@ header .nav li a img{
   width: 100%; background-color: #999;
   height: 450px;
 }
+.s2 .web>li .left p:nth-child(1) img{
+  width: 100%; height: 100%; object-fit: cover;
+}
 .s2 .web>li .left p.mobile{
   position: absolute;
   right: -50px; bottom: -50px;
   width: 240px; height: 479.1px;
   border-radius: 30px;
   background-color: #fff;
+  overflow: hidden;
+  border: 2px solid #333;
+  box-shadow: 8px 15px 15px rgba(0,0,0,.3);
+}
+.s2 .web>li .left p.mobile img{
+  width: 100%; height: 100%; object-fit: cover;
+  object-position: top;
+}
+.s2 .web>li .left p.mobile:hover img{
+  object-position: bottom;
+  transition: 15s linear;
 }
 .s2 .web>li .left p.num{
   position: absolute;

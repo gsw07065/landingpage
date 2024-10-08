@@ -1,3 +1,14 @@
+//s2 web swiper 오류
+var swiper = new Swiper(".mySwiper", {
+  //direction: "vertical",
+  enabled: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
+  forceToAxis: true,
+  releaseOnEdges: true,
+});
+
 //s3 logo swiper
 var swiper = new Swiper(".mySwiper1", {
   loop:true,
