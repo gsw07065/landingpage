@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>img rotate</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .first, .third{height: 1000px; background-color: #ccc;}
+    .section{height: 500px; display: flex; justify-content: center; align-items: center;}
+    .wrap{
+      width: 216px; height: 216px;
+      margin: 0 auto; position: relative;
+      display: flex; justify-content: center; align-items: center;
+      
+    }
+/*     .wrap2{width: 100%; height: 100%;
+      
+    } */
+    p{
+      position: absolute; top: 0; background-image: url(img.png);
+      width: 34px; height: 108px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform-origin: 50% 100%; opacity: 0;
+      
+    }
+    
+    .i1{transform: scale(1.5);}
+    .i2{transform: rotate(45deg) scale(1.5);}
+    .i3{transform: rotate(90deg) scale(1.5);}
+    .i4{transform: rotate(135deg) scale(1.5);}
+    .i5{transform: rotate(180deg) scale(1.5);}
+    .i6{transform: rotate(-135deg) scale(1.5);}
+    .i7{transform: rotate(-90deg) scale(1.5);}
+    .i8{transform: rotate(-45deg) scale(1.5);}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+  <div class="first"></div>
+  <div class="section">
+    <div class="wrap">
+      <p class="i1"></p>
+      <p class="i2"></p>
+      <p class="i3"></p>
+      <p class="i4"></p>
+      <p class="i5"></p>
+      <p class="i6"></p>
+      <p class="i7"></p>
+      <p class="i8"></p>
+    </div>
+  </div>
+  <div class="third"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script>
+    const ani1 = gsap.timeline();
+    ani1.to(".i1",{
+      scale: 1, opacity:1, duration:.45,
+    }).to(".i2",{
+      scale: 1, opacity:1, duration:.45,
+    }).to(".i3",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.4").to(".i4",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.3").to(".i5",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.2").to(".i6",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.2").to(".i7",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.1").to(".i8",{
+      scale: 1, opacity:1, duration:.45,
+    },"<.05").to(".wrap",{
+      duration:5,
+      rotate: 720,
+      ease: "linear",
+      repeat: -1,
+    });
+
+    ScrollTrigger.create({
+      animation:ani1,
+      trigger:".section",
+      start: "top top",
+      markers:true,
+    })
+  </script>
+</body>
+</html>

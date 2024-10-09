@@ -149,7 +149,10 @@ header .nav li a img{
   /* width: 700px; height: 800px; */
   width: 0; height: 0;
 /*   background-image: linear-gradient(to bottom, #FF4040, transparent); */
-background: url(../images/s0_bg.jpg) center/cover no-repeat;
+background-image: url(../images/s0_bg.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
   opacity: 0;
   position: absolute; left: 46%; bottom: 0;
   transform: translateX(-50%);
@@ -241,10 +244,7 @@ background: url(../images/s0_bg.jpg) center/cover no-repeat;
   margin: 15px 0;
   gap: 10px;
 }
-.s1 .right .rBottom ul.skill li p:nth-child(1){
-  width: 50px; height: 50px;
-  background-color: #ccc;
-}
+
 
 /* s2 시작 */
 .s2{
@@ -492,10 +492,14 @@ content: none;
   gap: 50px;
   position: relative;
 }
-.s5 p.bg{
+#s5 p.bg{
   position: absolute;
   width: 100%; height: 100%;
-  background-image: linear-gradient(to bottom, rgba(255,64,64,1),transparent);
+  background-image: linear-gradient(to bottom, rgba(255,64,64,1),transparent),url(../images/s0_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
 }
 .s5 .text{
   color: #FF4040;

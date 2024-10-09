@@ -92,17 +92,21 @@ const ani2 = gsap.timeline();
     width: 700,
     height:800,
     opacity: 1,
+  }).to(".s0>p",{
+    backgroundImage: "linear-gradient(to bottom, #FF4040, transparent), url(../images/s0_bg.jpg)",
   });
 
   ScrollTrigger.create({
     animation: ani2,
     trigger: ".s0",
-    markers: true,
+    //markers: true,
     end: "+=2000",
     pin:true,
     scrub:2,
     anticipatePin:1,
   });
+
+
 
 
 //s3 logo, s4 character btn
@@ -116,6 +120,30 @@ $(".mySwiper1 #btn .swiper-button-prev").hover(function(){
 },function(){
   $(".mySwiper1 #btn .swiper-button-prev img").attr('src', 'images/s3&s4_arrow_left_Color.png');
 });
+
+
+//s5 gsap
+const ani3 = gsap.timeline();
+  ani3.to(".s5 p.bg",{
+    borderRadius: "1000 1000 0 0",
+  }).to(".s5 p.bg",{
+    width: 700,
+  }).to(".s5 p.bg",{
+    width: 0,
+    height: 0,
+    opacity: 0,
+  });
+
+  ScrollTrigger.create({
+    animation: ani3,
+    trigger: ".s5",
+    markers: true,
+    end: "+=2000",
+    pin:true,
+    scrub:2,
+    anticipatePin:1,
+  });
+
 
 
 /* $('#fullpage').fullpage({
@@ -135,6 +163,10 @@ $(".mySwiper1 #btn .swiper-button-prev").hover(function(){
     };
   }
 }); */
+
+
+
+
 
 
 //페이지 이동시 해당 header 버튼 효과
