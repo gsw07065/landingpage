@@ -91,7 +91,7 @@ const ani2 = gsap.timeline();
   },"t1").to(".s0>p",{
     width: 700,
     height:800,
-    opacity: .5,
+    opacity: 1,
   });
 
   ScrollTrigger.create({

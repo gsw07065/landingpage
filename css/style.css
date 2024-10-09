@@ -148,7 +148,8 @@ header .nav li a img{
 .s0>p{
   /* width: 700px; height: 800px; */
   width: 0; height: 0;
-  background-image: linear-gradient(to bottom, #FF4040, transparent);
+/*   background-image: linear-gradient(to bottom, #FF4040, transparent); */
+background: url(../images/s0_bg.jpg) center/cover no-repeat;
   opacity: 0;
   position: absolute; left: 46%; bottom: 0;
   transform: translateX(-50%);
@@ -254,8 +255,7 @@ header .nav li a img{
 #s2 .mySwiper {
   width: 100%;
   height: 100%;
-  /* position: relative !important; */
-  background-color: #444;
+  /* background-color: #444; */
   
 }
 #s2 .mySwiper .swiper-wrapper{
@@ -283,7 +283,8 @@ header .nav li a img{
   position: relative;
 }
 .s2 .web>li .left p:nth-child(1){
-  width: 100%; background-color: #999;
+  width: 100%;
+  background-color: #999;
   height: 450px;
 }
 .s2 .web>li .left p:nth-child(1) img{
@@ -370,10 +371,23 @@ header .nav li a img{
 }
 .s2 .web>li p.brandname{
   position: absolute;
-  left: -70px; bottom: 100px;
+  left: 20px; bottom: 100px;
 }
 .s2 .web>li:nth-child(2) p.brandname{
-  left: -120px; bottom: 70px;
+  left: 25px; bottom: 70px;
+}
+
+#s2 .swiper-pagination-clickable .swiper-pagination-bullet{
+  background-color: #FF4040;
+  border-radius: 50px;
+  /* width: 30px; */
+  margin: 4px;
+  transition: .5s;
+  height: 10px; width: 10px;
+}
+#s2 .swiper-pagination-bullet-active{
+  width: 50px !important;
+  /* margin: 0 4px !important; */
 }
 
 /* s3 시작 */
