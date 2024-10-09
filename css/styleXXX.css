@@ -396,10 +396,7 @@ background-size: cover;
   margin: 0 auto;
   position: relative;
 }
-.s3 .box{
-  position: absolute;
-  overflow: hidden;
-}
+.s3 .box{position: absolute;}
 .s3 .logoBox{
   left: 0; top: 50px;
   z-index: 10;
@@ -430,32 +427,16 @@ background-size: cover;
   box-sizing: border-box;
   position: static !important;
 }
-.mySwiper1 .swiper-slide a{
-  display: block;
-  width: 400px; height: 400px;
-  overflow: hidden;
-  transition: .5s;
-}
-.mySwiper1 .swiper-slide a:hover{
-  background-color: #FF4040;
-}
-.mySwiper1 .swiper-slide a img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: .5s;
-}
-.mySwiper1 .swiper-slide a:hover img{
-  border-radius: 0 100px 0 0;
-  transform: scale(1.05);
-  transform-origin: right top;
-}
+/* .mySwiper1 .swiper-slide p:nth-child(1){
+  width: 100%; height: 400px;
+  background: #777
+} */
 .mySwiper1 .swiper-slide p{
   font-family: NotoB;
   color: #fff;
   line-height: 100px;
-  transition: .5s;
 }
+
 .mySwiper1 #btn{
   position: absolute;
   left: 50%; bottom: 50px;
@@ -482,9 +463,55 @@ content: none;
 .mySwiper1 #btn .swiper-button-prev:hover img{
   color: #000;
 }
+/* s3 modal!!!! */
+.mySwiper1 .swiper-slide .btn-open-popup{
+  width: 100%; height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mySwiper1 .swiper-slide .btn-open-popup img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-
-
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal_body {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.modal_body img{
+  width: 100%; object-fit: contain;
+}
+  /* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* s4 시작 */
 .s4{
@@ -492,10 +519,7 @@ content: none;
   margin: 0 auto;
   position: relative;
 }
-.s4 .box{
-  position: absolute;
-  overflow: hidden;
-}
+.s4 .box{position: absolute;}
 .s4 .chaBox{
   left: 0; top: 50px;
   z-index: 10;
