@@ -1,3 +1,4 @@
+
 //s2 web swiper 오류
 var swiper = new Swiper(".mySwiper", {
   //direction: "vertical",
@@ -56,6 +57,54 @@ var swiper = new Swiper(".mySwiper1", {
 
 
 //jquery 제이쿼리
+
+//s0 gsap
+const ani1 = gsap.timeline();
+  ani1.to(".s0 .mainWord p:nth-child(1) img",{
+    y: 0,
+    duration: 1,
+    delay:1.2,
+  }).to(".s0 .mainWord p:nth-child(2) img",{
+    y: 0,
+    duration: 1,
+  }).to(".s0 .mainWord p:nth-child(2) img",{
+    duration: 5,
+    rotate: 720,
+    repeat: -1,
+    ease: "linear",
+  });
+
+const ani2 = gsap.timeline();
+  ani2.to(".s0 .leftWord p",{
+    opacity: 0,
+  },"t1").to(".s0 .mainWord p:nth-child(1)",{
+    //xPercent: 50,
+    scale: 1.7,
+    x: 380,
+    y: -120,
+    //opacity: 0.5,
+  },"t1").to(".s0 .mainWord p:nth-child(2)",{
+    scale: 1.7,
+    x: 500,
+    y: -250,
+    //opacity: 0.5,
+  },"t1").to(".s0>p",{
+    width: 700,
+    height:800,
+    opacity: .5,
+  });
+
+  ScrollTrigger.create({
+    animation: ani2,
+    trigger: ".s0",
+    markers: true,
+    end: "+=2000",
+    pin:true,
+    scrub:2,
+    anticipatePin:1,
+  });
+
+
 //s3 logo, s4 character btn
 $(".mySwiper1 #btn .swiper-button-next").hover(function(){
   $(".mySwiper1 #btn .swiper-button-next img").attr('src', 'images/s3&s4_arrow_right_Black.png');

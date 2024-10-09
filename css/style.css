@@ -117,12 +117,13 @@ header .nav li a img{
 
 /* s0 시작 */
 .s0{
-  height: 100vh; width: 90%;
+  height: 100vh; width: 100%;
   margin: 0 auto;
   display: flex; flex-direction: column;
   justify-content: end;
   padding-bottom: 20px;
   box-sizing: border-box;
+  left: 50px;
 }
 .s0 .leftWord{
   display: flex; flex-direction: column;
@@ -137,6 +138,21 @@ header .nav li a img{
 .s0 .mainWord p:nth-child(2){
   position: absolute;
   left: 950px; top: -50px;
+}
+.s0 .mainWord p{
+  overflow: hidden;
+}
+.s0 .mainWord p img{
+  transform: translateY(370px);
+}
+.s0>p{
+  /* width: 700px; height: 800px; */
+  width: 0; height: 0;
+  background-image: linear-gradient(to bottom, #FF4040, transparent);
+  opacity: 0;
+  position: absolute; left: 46%; bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 500px 500px 0 0;
 }
 
 
