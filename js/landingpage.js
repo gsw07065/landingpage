@@ -80,13 +80,13 @@ const ani2 = gsap.timeline();
     opacity: 0,
   },"t1").to(".s0 .mainWord p:nth-child(1)",{
     //xPercent: 50,
-    scale: 1.7,
-    x: 380,
+    scale: 1.8,
+    x: 560,
     y: -120,
     //opacity: 0.5,
   },"t1").to(".s0 .mainWord p:nth-child(2)",{
-    scale: 1.7,
-    x: 500,
+    scale: 1.8,
+    x: 610,
     y: -250,
     //opacity: 0.5,
   },"t1").to(".s0>p",{
