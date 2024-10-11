@@ -456,6 +456,23 @@ background-size: cover;
   line-height: 100px;
   transition: .5s;
 }
+.s2 .swiper-slide:nth-child(1) .middleEx li:last-child p:nth-child(1){background: #FFB400;}
+.s2 .swiper-slide:nth-child(1) .middleEx li:last-child p:nth-child(2){background: #333;}
+.s2 .swiper-slide:nth-child(1) .middleEx li:last-child p:nth-child(3){background: #fff;}
+
+.s2 .swiper-slide:nth-child(2) .middleEx li:last-child p:nth-child(1){background: #6F8B31;}
+.s2 .swiper-slide:nth-child(2) .middleEx li:last-child p:nth-child(2){background: #D1A931;}
+.s2 .swiper-slide:nth-child(2) .middleEx li:last-child p:nth-child(3){background: #F2EFE4;}
+
+.s2 .swiper-slide:nth-child(3) .middleEx li:last-child p:nth-child(1){background: #FF7700;}
+.s2 .swiper-slide:nth-child(3) .middleEx li:last-child p:nth-child(2){background: #000; border: 1px solid #fff;}
+.s2 .swiper-slide:nth-child(3) .middleEx li:last-child p:nth-child(3){background: #fff;}
+
+.s2 .swiper-slide:nth-child(4) .middleEx li:last-child p:nth-child(1){background: #002569;}
+.s2 .swiper-slide:nth-child(4) .middleEx li:last-child p:nth-child(2){background: #7DD8FF;}
+.s2 .swiper-slide:nth-child(4) .middleEx li:last-child p:nth-child(3){background: #99FFAC;}
+
+
 .mySwiper1 #btn{
   position: absolute;
   left: 50%; bottom: 50px;

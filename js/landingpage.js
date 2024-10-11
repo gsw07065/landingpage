@@ -177,6 +177,7 @@ const ani5 = gsap.timeline();
     //markers: true,
     end: "+=2000",
     pin:true,
+    pinSpacing: true,
     scrub:2,
     anticipatePin:1,
   });
@@ -199,7 +200,7 @@ const ani5 = gsap.timeline();
     repeat: -1,
   }).to(".line1",{
     height:220,
-  },"<.5").to(".line2",{
+  },"<.2").to(".line2",{
     height:220,
   });
 
