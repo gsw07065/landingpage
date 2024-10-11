@@ -37,7 +37,9 @@
 ul{list-style: none;}
 a{text-decoration: none; color: #fff;}
 
- html{scroll-behavior: smooth;}
+ html{
+  scroll-behavior: smooth;
+}
 /*기기에 따라 오류 발생 */
 /* 풀페이지 함께 활용시 딜레이 발생 */
 
@@ -46,9 +48,6 @@ body{
   overflow-x: hidden;
 }
 #wrap{
-  width: 100%;
-}
-#wrap #fullpage{
   width: 100%;
 }
 
@@ -371,10 +370,10 @@ background-size: cover;
 }
 .s2 .web>li p.brandname{
   position: absolute;
-  left: 20px; bottom: 100px;
+  left: 130px; bottom: 100px;
 }
 .s2 .web>li:nth-child(2) p.brandname{
-  left: 25px; bottom: 70px;
+  left: 115px; bottom: 70px;
 }
 
 #s2 .swiper-pagination-clickable .swiper-pagination-bullet{
@@ -408,9 +407,10 @@ background-size: cover;
   right: 0; bottom: 30px;
 }
 .mySwiper1 {
+  margin: 0 auto;
   width: 95%;
   height: 100%;
-  position: relative;
+  /* position: relative; */
   
 }
 .mySwiper1 .swiper-wrapper{
@@ -511,8 +511,8 @@ content: none;
   display: flex; flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   position: relative;
+  gap: 50px;
 }
 #s5 p.bg{
   position: absolute;
@@ -523,12 +523,43 @@ content: none;
   background-size: cover;
   bottom: 0;
 }
+.s5 .flower{
+  width: 216px; height: 216px;
+  margin: 0 auto; position: relative;
+  display: flex; justify-content: center; align-items: center;
+}
+.s5 .flower p{
+  position: absolute; top: 0; background-image: url(../images/s5_flowerleaf.png);
+  width: 34px; height: 108px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform-origin: 50% 100%; opacity: 0;
+}
+.flower .i1{transform: scale(1.5);}
+.flower .i2{transform: rotate(45deg) scale(1.5);}
+.flower .i3{transform: rotate(90deg) scale(1.5);}
+.flower .i4{transform: rotate(135deg) scale(1.5);}
+.flower .i5{transform: rotate(180deg) scale(1.5);}
+.flower .i6{transform: rotate(-135deg) scale(1.5);}
+.flower .i7{transform: rotate(-90deg) scale(1.5);}
+.flower .i8{transform: rotate(-45deg) scale(1.5);}
 .s5 .text{
   color: #FF4040;
   text-align: center;
   line-height: 40px;
   font-family: NotoR;
 }
+.s5 .line{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px; /* height: 220px; */
+  height: 0;
+  background-color: #FF4040;
+}
+.s5 .line1{top: 0;}
+.s5 .line2{top: calc(100% - 220px);}
+
 
 /* s6 시작 */
 .s6{
@@ -555,6 +586,13 @@ content: none;
 @keyframes ani {
   0%{transform: rotate(0);}
   100%{transform: rotate(720deg);}
+}
+.s6 .line3{
+  position: absolute;
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  width: 1px; height: 220px;
+  background-color: #FF4040;
 }
 .s6 a#topBtn{
   display: block;

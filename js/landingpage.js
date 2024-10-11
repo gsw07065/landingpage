@@ -154,7 +154,7 @@ const ani4 = gsap.timeline();
     animation:ani4,
     trigger:".s4",
     start: "top-50 top",
-    markers:true,
+    //markers:true,
   });
 
 
@@ -180,6 +180,37 @@ const ani5 = gsap.timeline();
     scrub:2,
     anticipatePin:1,
   });
+
+  //s5 gsap 2
+  const ani5_2 = gsap.timeline({defaults: {duration:.7, scale: 1, opacity:1,}});
+  ani5_2.to(".i1",{
+    delay: 1.5,
+  }).to(".i2",{
+  }).to(".i3",{
+  },"<.4").to(".i4",{
+  },"<.3").to(".i5",{
+  },"<.2").to(".i6",{
+  },"<.2").to(".i7",{
+  },"<.1").to(".i8",{
+  },"<.05").to(".flower",{
+    duration:5,
+    rotate: 720,
+    ease: "linear",
+    repeat: -1,
+  }).to(".line1",{
+    height:220,
+  },"<.5").to(".line2",{
+    height:220,
+  });
+
+  ScrollTrigger.create({
+    animation:ani5_2,
+    trigger:".flower",
+    start: "top top",
+    markers:true,
+    //scrub:2,
+    //toggleAction:"play pause resume reverse",
+  })
 
 
 //페이지 이동시 해당 header 버튼 효과
