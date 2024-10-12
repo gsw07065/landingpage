@@ -322,6 +322,8 @@ background-size: cover;
 }
 .s2 .web>li .right .topEx{
   line-height: 30px;
+  letter-spacing: -1px;
+  font-size: 15px;
 }
 .s2 .web>li .right .middleEx li{
   display: flex;
@@ -329,6 +331,7 @@ background-size: cover;
   gap: 50px;
   line-height: 18px;
   margin: 20px 0;
+  letter-spacing: -.5px;
 }
 .s2 .web>li .right .middleEx li h4{
   font-weight: normal;
@@ -370,10 +373,10 @@ background-size: cover;
 }
 .s2 .web>li p.brandname{
   position: absolute;
-  left: 130px; bottom: 100px;
+  left: 30px; bottom: 100px;
 }
 .s2 .web>li:nth-child(2) p.brandname{
-  left: 115px; bottom: 70px;
+  left: 30px; bottom: 70px;
 }
 
 #s2 .swiper-pagination-clickable .swiper-pagination-bullet{
