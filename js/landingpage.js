@@ -261,3 +261,14 @@ $(window).scroll(function(){
   }
 
 });
+
+
+
+
+
+
+//fullpage 풀페이지
+//$('#fullpage').fullpage({
+  //navigation:true,
+  //scrollBar: true,
+//});
