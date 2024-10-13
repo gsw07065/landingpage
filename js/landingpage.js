@@ -138,7 +138,7 @@ const ani3 = gsap.timeline();
     animation:ani3,
     trigger:".s3",
     start: "top-50 top ",
-    markers:true,
+    //markers:true,
   });
 
 //s4 gsap
