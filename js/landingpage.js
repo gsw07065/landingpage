@@ -7,11 +7,11 @@ var swiper = new Swiper(".mySwiper", {
   enabled: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  /* mousewheel: true, */
+  mousewheel: true,
   //forceToAxis: true,
-  /* mousewheel: {
+  mousewheel: {
     releaseOnEdges: true,
-  }, */
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -124,17 +124,17 @@ const ani2 = gsap.timeline();
       start: "top 10%",
       end: "60%",
       pin: true,
-      onUpdate: function onUpdate(self) {
+      /*onUpdate: function onUpdate(self) {
         var scrollPos = self.progress.toFixed(2) * 100;
         console.log(scrollPos);
         if (swiper.mousewheel) {
           if (scrollPos > 0) {
-            swiper.mousewheel.enable(); // Swiper mousewheel 활성화
+            swiper.mousewheel.disable(); // Swiper mousewheel 활성화
           } else {
             swiper.mousewheel.disable(); // Swiper mousewheel 비활성화
           }
         }
-      },
+      },*/
     },
   });
 
