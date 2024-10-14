@@ -290,6 +290,11 @@ $(window).scroll(function(){
 });
 
 
+//top이동 버튼
+$("#topBtn").click(function(e){
+  e.preventDefault();
+  $("html, body").animate({scrollTop:0}, 1000);
+});
 
 
 

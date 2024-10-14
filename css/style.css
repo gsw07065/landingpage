@@ -264,9 +264,9 @@ background-size: cover;
   top: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #FF4040;
   z-index: 900;
-  opacity: 0.05;
+  opacity: 0.15;
 }
 #section2.on::after {
   display: none;
