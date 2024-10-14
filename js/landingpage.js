@@ -268,7 +268,19 @@ $(window).scroll(function(){
 
 
 //fullpage 풀페이지
-//$('#fullpage').fullpage({
+/* $('#fullpage').fullpage({
   //navigation:true,
-  //scrollBar: true,
-//});
+  scrollBar: true,
+  normalScrollElements: '.scrollable-element',
+    afterLoad: function(origin, destination, direction) {
+  if ($("#section0, #section5").hasClass("active")) { 
+    $.fn.fullpage.setScrollingSpeed(0);
+    $.fn.fullpage.setAllowScrolling(false);
+    $("#section0, #section5").css("overflowY","scroll");
+  } else {
+      // 나머지 페이지는 다시 FullPage.js 사용
+      $.fn.fullpage.setScrollingSpeed(1000);
+      $.fn.fullpage.setAllowScrolling(true);
+    }
+  }
+}); */
