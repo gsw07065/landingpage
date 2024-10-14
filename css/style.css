@@ -354,7 +354,7 @@ background-size: cover;
 }
 .s2 .web>li .right .btn{
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
 }
 .s2 .web>li .right .btn li{
@@ -363,9 +363,9 @@ background-size: cover;
 .s2 .web>li .right .btn li a{
   display: block;
   padding: 10px 0;
-  width: 140px;
+  width: 130px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 100px;
   font-family: InterR;
   border: 1px solid #FF4040;
   color: #FF4040;
@@ -485,22 +485,31 @@ background-size: cover;
   left: 50%; bottom: 50px;
   transform: translateX(-50%);
   z-index: 99;
-  width: 300px; height: 100px;
+  width: 200px; height: 100px;
 }
 .mySwiper1 #btn .swiper-button-next,
 .mySwiper1 #btn .swiper-button-prev{
-  width: 130px; height: 50px;
+  width: 70px; height: 70px;
   border: 1px solid #FF4040;
-  border-radius: 50%;
+  border-radius: /* 100px 0 0  */100px;
   transition: .5s;
+  
+}
+.mySwiper1 #btn .swiper-button-next{
+  /* border-radius: 0 100px 100px 0; */
 }
 .mySwiper1 #btn .swiper-button-next:hover,
 .mySwiper1 #btn .swiper-button-prev:hover{
   background-color: #FF4040;
+  width: 100px;
 }
 .mySwiper1 #btn .swiper-button-next:after,
 .mySwiper1 #btn .swiper-button-prev:after{
 content: none;
+}
+.mySwiper1 #btn .swiper-button-next img,
+.mySwiper1 #btn .swiper-button-prev img{
+  width: 40%;
 }
 .mySwiper1 #btn .swiper-button-next:hover img,
 .mySwiper1 #btn .swiper-button-prev:hover img{
@@ -621,9 +630,9 @@ content: none;
 .s6 a#topBtn{
   display: block;
   padding: 10px 0;
-  width: 140px;
+  width: 130px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 100px;
   font-family: InterR;
   border: 1px solid #FF4040;
   color: #FF4040;
