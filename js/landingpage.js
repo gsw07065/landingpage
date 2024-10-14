@@ -7,14 +7,24 @@ var swiper = new Swiper(".mySwiper", {
   enabled: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  mousewheel: true,
+  /* mousewheel: true, */
   //forceToAxis: true,
-  mousewheel: {
+  /* mousewheel: {
     releaseOnEdges: true,
-  },
+  }, */
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  on: {
+    slideChange: function () {
+      /*var i = this.activeIndex;
+      if (this.activeIndex != 0 && i != 3) {
+        swiper.mousewheel.enable();
+      } else {
+        swiper.mousewheel.disable();
+      }*/
+    },
   },
 });
 
@@ -107,7 +117,26 @@ const ani2 = gsap.timeline();
     anticipatePin:1,
   });
 
-
+  gsap.to("#section2", {
+    scrollTrigger: {
+      trigger: "#section2 .mySwiper",
+      markers: true,
+      start: "top 10%",
+      end: "60%",
+      pin: true,
+      onUpdate: function onUpdate(self) {
+        var scrollPos = self.progress.toFixed(2) * 100;
+        console.log(scrollPos);
+        if (swiper.mousewheel) {
+          if (scrollPos > 0) {
+            swiper.mousewheel.enable(); // Swiper mousewheel 활성화
+          } else {
+            swiper.mousewheel.disable(); // Swiper mousewheel 비활성화
+          }
+        }
+      },
+    },
+  });
 
 
 
