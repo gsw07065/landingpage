@@ -137,7 +137,7 @@ const ani3 = gsap.timeline();
   ScrollTrigger.create({
     animation:ani3,
     trigger:".s3",
-    start: "top-50 top ",
+    start: "top top",
     //markers:true,
   });
 
@@ -153,7 +153,7 @@ const ani4 = gsap.timeline();
   ScrollTrigger.create({
     animation:ani4,
     trigger:".s4",
-    start: "top-50 top",
+    start: "top top",
     //markers:true,
   });
 
