@@ -377,10 +377,10 @@ background-size: cover;
 }
 .s2 .web>li p.brandname{
   position: absolute;
-  left: 110px; bottom: 100px;
+  left: 130px; bottom: 100px;
 }
 .s2 .web>li:nth-child(2) p.brandname{
-  left: 110px; bottom: 70px;
+  left: 130px; bottom: 70px;
 }
 
 #s2 .swiper-pagination-clickable .swiper-pagination-bullet{
