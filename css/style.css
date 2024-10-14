@@ -253,10 +253,28 @@ background-size: cover;
 
 
 /* s2 시작 */
+#section2 {
+  position: relative;
+  padding-top: 100px;
+}
+#section2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 900;
+  opacity: 0.05;
+}
+#section2.on::after {
+  display: none;
+}
 .s2{
   width: 100%; height: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 #s2 .mySwiper {
   width: 100%;
