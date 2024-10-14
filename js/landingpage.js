@@ -120,7 +120,7 @@ const ani2 = gsap.timeline();
   gsap.to("#section2", {
     scrollTrigger: {
       trigger: "#section2 .mySwiper",
-      markers: true,
+      //markers: true,
       start: "top 10%",
       end: "60%",
       pin: true,
