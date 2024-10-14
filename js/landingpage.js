@@ -208,7 +208,7 @@ const ani5 = gsap.timeline();
     animation:ani5_2,
     trigger:".flower",
     start: "top top",
-    markers:true,
+    //markers:true,
     //scrub:2,
     //toggleAction:"play pause resume reverse",
   })
