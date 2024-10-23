@@ -246,7 +246,7 @@ $(window).scroll(function(){
   let s1Top = $("#s1").offset().top;
   let s1Bot = s1Top + $("#s1").height();
   let s2Top = $("#s2").offset().top;
-  let s2Bot = s2Top + $("#s2").height();
+  let s2Bot = s2Top + $("#s2").height() + $(".s2_1").height();
   let s3Top = $("#s3").offset().top;
   let s3Bot = s3Top + $("#s3").height();
   let s4Top = $("#s4").offset().top;

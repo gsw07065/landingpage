@@ -276,6 +276,12 @@ background-size: cover;
   margin: 0 auto;
   /* padding-top: 100px; */
 }
+.s2 h1{
+  color: #FF4040;
+  text-transform: uppercase;
+  font-family: InterBlack;
+  margin: 10px 10% 0;
+}
 #s2 .mySwiper {
   width: 100%;
   height: 100%;
@@ -287,7 +293,7 @@ background-size: cover;
 }
 
 #s2 .mySwiper li.swiper-slide {
-  width: 80%; height: 100% !important;
+  width: 80%; height: 85% !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,6 +422,53 @@ background-size: cover;
   width: 50px !important;
   /* margin: 0 4px !important; */
 }
+
+/* s2_1 시작 */
+.s2_1{
+  width: 80%; margin: 0 auto;
+  height: 800px;
+}
+.s2_1 h1{
+  color: #FF4040;
+  text-transform: uppercase;
+  font-family: InterBlack;
+  margin: 150px 0 80px;
+}
+.s2_1 ul{
+  width: 100%; 
+  display: flex;
+  gap: 50px;
+}
+.s2_1 ul li{flex: 1;}
+.s2_1 ul li a{
+  display: inline-block; width: 100%;
+  background-color: #fff;
+  aspect-ratio: 1 / 1;
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+.s2_1 ul li a:hover{
+  background-color: #FF4040;
+}
+.s2_1 ul li a img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 60% center;
+  transition: .5s;
+}
+.s2_1 ul li a:hover img{
+  border-radius: 0 100px 0 0;
+  transform: scale(1.05);
+  transform-origin: right top;
+}
+.s2_1 ul li p{
+  text-align: center;
+  color: #FF4040;
+  font-family: NotoB;
+  line-height: 50px;
+}
+
 
 /* s3 시작 */
 .s3{
